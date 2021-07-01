@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charshet="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Pollution Report</title>
+</head>
+<body>
+  <h1>Pollution Report</h1>
+
+  <form action="/reports" method="post" enctype="multipart/form-data">
+    <input type="text" name="city" placeholder="City" required style="display: block"/>
+    <input type="text" name="address" placeholder="Address" required style="display: block"/>
+    <input type="text" name="street_number" placeholder="Street number" required style="display: block"/>
+    <input type="text" name="cap" placeholder="CAP" required style="display: block"/>
+    <input type="file" name="photo" required accept="image/png, image/jpg, image/jpeg, image/gif" style="display: block"/>
+    <button type="submit">Submit</button>
+  </form>
+
+  <a href="/reports">Reports</a>
+</body>
+</html>
