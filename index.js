@@ -1,8 +1,5 @@
 let express = require("express");
 let app = express();
-let bodyParser = require("body-parser");
-let database = require("./src/Models/db.js");
-let report = require("./src/Models/report.model.js");
 
 
 app.use(express.json());
